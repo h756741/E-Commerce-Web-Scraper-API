@@ -14,7 +14,7 @@ const baseUrl = `https://api.scraperapi.com?api_key=${apiKey}&autoparse=true`;
 // parse json
 app.use(express.json());
 
-// initial route route
+// initial route
 app.get('/', (req, res) => {
     res.send('Welcome to Amazon Scraper API.');
 })
