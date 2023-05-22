@@ -1,13 +1,14 @@
 // backend requirements
 const express = require('express');
 const request = require('request-promise');
+const dotenv = require('dotenv').config();
 
 // intialize app
 const app = express();
 const PORT = process.env.PORT || 5001;
 
 // keys
-const apiKey = '4a7d28e4857f4ff11ccbda830c765d6e';
+const apiKey = process.env.API_KEY;
 const baseUrl = `https://api.scraperapi.com?api_key=${apiKey}&autoparse=true`;
 
 // parse json
